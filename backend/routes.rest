@@ -1,0 +1,26 @@
+### Get all posts
+http://localhost:8080/posts
+### Get post by id (ints: 1-100 valid)
+http://localhost:8080/posts/7
+
+### Update post by id (ints 1-100 valid)
+PUT http://localhost:8080/posts/7 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "This is a real title",
+    "body": "This is a really fun project. This is also a body."
+}
+
+### Delete post by id (ints 1-100 valid)
+DELETE  http://localhost:8080/posts/7 HTTP/1.1
+
+### Create post
+POST http://localhost:8080/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "This is the title",
+    "body": "Some awesome post body.",
+    "userId": 1
+}
