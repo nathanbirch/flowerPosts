@@ -1,0 +1,44 @@
+.postsUl {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 !important;
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+
+.postsUl > li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+.postsUl > li span {
+  text-decoration: none;
+  color: #000;
+  display: block;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease, height;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease, height;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease, height;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease, height;
+  transition: font-size 0.3s ease, background-color 0.3s ease, height;
+}
+
+.postsUl > li span:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.postsUl::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.postsUl::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ccc;
+}
+
+.postsUl::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0);
+}

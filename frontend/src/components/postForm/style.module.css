@@ -1,0 +1,20 @@
+.iconContainer {
+  align-items: center;
+  display: block;
+  text-align: center;
+  height: 50px;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  transition: 0.5s;
+}
+
+.iconContainer:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.regularInput {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: white !important;
+}
