@@ -6,7 +6,7 @@ import PostForm from '../postForm';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { css } from '@emotion/react';
-import styles from './style.module.css';
+import './style.module.css';
 import PuffLoader from 'react-spinners/PuffLoader';
 import { useDispatch } from 'react-redux';
 import { setPosts } from '../../redux/ducks/posts';

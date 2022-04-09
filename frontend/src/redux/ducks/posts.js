@@ -15,6 +15,7 @@ const initialState = { posts: undefined };
 export default (state = initialState, action) => {
   switch (action.type) {
     case SET_POSTS:
+      // eslint-disable-next-line no-case-declarations
       const { posts } = action;
       return { ...state, posts };
     default:
