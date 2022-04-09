@@ -1,5 +1,5 @@
+/* eslint-disable no-undef */
 import React from 'react';
-import renderer from 'react-test-renderer';
 import PostSearch from './';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
@@ -16,7 +16,7 @@ describe('With React Testing Library', () => {
 
   it('Renders PostSearch', () => {
     store = mockStore(initialState);
-    const { getByText } = render(
+    render(
       <Provider store={store}>
         <PostSearch posts={mockPosts} />
       </Provider>

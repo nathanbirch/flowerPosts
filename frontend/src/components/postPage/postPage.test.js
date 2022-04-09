@@ -1,5 +1,5 @@
+/* eslint-disable no-undef */
 import React from 'react';
-import renderer from 'react-test-renderer';
 import Posts from './';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
@@ -12,7 +12,7 @@ describe('With React Testing Library', () => {
 
   it('Renders Posts', () => {
     store = mockStore(initialState);
-    const { getByText } = render(
+    render(
       <Provider store={store}>
         <Posts />
       </Provider>

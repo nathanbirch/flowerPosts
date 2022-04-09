@@ -11,6 +11,7 @@ export default function PostSearch(props) {
         id='postsTitlesTypeahead'
         placeholder='Search by title'
         selectHintOnEnter
+        submitFormOnEnter
         onChange={(selectedPost) => {
           props.setHandler(selectedPost[0]);
         }}

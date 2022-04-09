@@ -13,18 +13,16 @@ export default function PostList(props) {
           <ul className={styles.postsUl}>
             {posts.map((post, i) => {
               return (
-                <li
-                  key={i}
-                  onClick={() => {
-                    props.selectPostHandler(post);
-                  }}>
-                  {/* <span
-                    className={`${
-                      post.id === props.selectedPost.id ? 'text-primary' : ''
-                    }`}> */}
+                <li key={i}>
                   <span>
-                    {post.title.substring(0, charactersToDisplay)}
-                    {post.title.length > charactersToDisplay ? '...' : ''}
+                    <button
+                      className={styles.postButton}
+                      onClick={() => {
+                        props.selectPostHandler(post);
+                      }}>
+                      {post.title.substring(0, charactersToDisplay)}
+                      {post.title.length > charactersToDisplay ? '...' : ''}
+                    </button>
                   </span>
                 </li>
               );
